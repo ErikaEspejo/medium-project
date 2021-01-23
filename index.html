@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medium</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="hero"></div>
   <header>
+    <p>CONTENIDO</p>
     <nav>
       <details open>
         <summary> <a href="#setup">Setup</a></summary>
@@ -34,8 +36,8 @@
   </header>
 
   <main>
-    <section>
-      <h1>Curso Esencial de HTML y CSS</h1>
+    <section class="title">
+      <h1>Curso esencial de HTML y CSS</h1>
       <p>
         Este es el inicio de tu carrera como Desarrollador Web,
         empezarás aprendiendo HTML y CSS para la creación de contenidos,
@@ -43,14 +45,14 @@
       </p>
     </section>
     <hr>
-    <section id="setup">
+    <section class="setup" id="setup">
       <h2>Setup</h2>
       <article id="google-chrome">
         <figure>
           <img src="./img/google-chrome.png" alt="logo de google chrome" title="Logo de Google Chrome">
         </figure>
         <h3 class="title-setup">Google Chrome</h3>
-        <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso
+        <p>Chrome va a ser <strong>el navegador que utilizaremos</strong>  en el curso por su extenso
           soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
         </p>
       </article>
@@ -95,7 +97,7 @@
     </section>
     <hr>
 
-    <section id="conceptos-web">
+    <section class="conceptos-web" id="conceptos-web">
       <h2 >Conceptos esenciales del Desarrollo Web</h2>
       <article id="html">
         <h3 class="title-setup">Qué es HTML</h3>
@@ -129,7 +131,7 @@
           a usar las más importantes y que serán parte de tu día a día como Software Developer.
         </p>
       </article>
-      <article id="dom">
+      <article class="dom" id="dom">
         <h3 class="title-setup">DOM</h3>
         <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos
           web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando
@@ -158,7 +160,7 @@
           la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src
         </p>
       </article>
-      <article id="css">
+      <article class="css" id="css">
         <h3 class="title-setup">Qué es CSS</h3>
         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos
           utilizado para describir la presentación de documentos HTML
@@ -169,10 +171,10 @@
       </article>
     </section>
     <hr>
-    <section>
+    <section class="modelo-caja">
       <h2>Modelo de caja</h2>
       <article>
-        <h3 class="title-setup">El modelo de caja está compuesto por:</h3>
+        <h3>El modelo de caja está compuesto por:</h3>
         <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos
           estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
         <ol>
@@ -183,7 +185,7 @@
         </ol>
       </article>
       <article>
-        <h3 class="title-setup">Propiedades físicas para el modelo de caja:</h3>
+        <h3>Propiedades físicas para el modelo de caja:</h3>
         <ul>
           <li>width / height</li>
           <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
@@ -192,7 +194,7 @@
         </ul>
       </article>
       <article>
-        <h3 class="title-setup">Propiedades lógicas para el modelo de caja:</h3>
+        <h3>Propiedades lógicas para el modelo de caja:</h3>
         <ul>
           <li>inline-size / block-size</li>
           <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
@@ -201,7 +203,7 @@
         </ul>
       </article>
       <article>
-        <h3 class="title-setup">Modelo de caja</h3>
+        <h3>Modelo de caja</h3>
         <figure>
           <img src="/img/modelo-caja.png" alt="Imagen de modelo de caja">
         </figure>
@@ -209,15 +211,15 @@
 
       <p>Si tienes alguna pregunta escríbeme a <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a></p>
     </section>
-    <section>
+    <section class="suscribe">
       <h3>Suscríbete a nuestro newsletter</h3>
       <input type="text" placeholder="Nombre">
       <input type="email" placeholder="Correo electrónico">
-      <input type="submit">
+      <input class="button" type="submit" value="Suscribirme">
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>© Leonidas Esteban 2021</p>
     <figure>
       <img src="/img/instagram.png" alt="Link al perfil de instagram">
