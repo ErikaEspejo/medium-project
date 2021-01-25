@@ -47,7 +47,7 @@ main {
 }
 
 .content {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 
@@ -64,6 +64,12 @@ h2 {
 
 .setup figure {
   margin: 40px 0 0;
+
+}
+.art-title {
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 h3 {
@@ -71,7 +77,9 @@ h3 {
   font-size: 2.4rem;
   margin: 16px 0 24px;
   font-weight: normal;
+  position: relative;
 }
+
 
 p {
   font-size: 1.6rem;
@@ -85,7 +93,11 @@ p strong {
 
 .setup h3, .conceptos-web h3 {
   padding-bottom: 4px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
+
 
 .setup h3::after, .conceptos-web h3::after {
   content: " ";
@@ -93,6 +105,9 @@ p strong {
   background-color: var(--gray-20);
   width: 80px;
   height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 
 }
 
@@ -162,6 +177,9 @@ pre {
 
 .modelo-caja h3 {
   margin: 40px 0 16px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .modelo-caja li {
