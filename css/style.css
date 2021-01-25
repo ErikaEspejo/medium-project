@@ -37,6 +37,20 @@ h1+p {
   margin-bottom: 64px;
 }
 
+main {
+  border: 1px solid red;
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+.content {
+  padding: 20px;
+}
+
+
 hr {
   margin: 64px 0px;
 }
