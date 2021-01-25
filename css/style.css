@@ -59,6 +59,17 @@ header li {
   margin-bottom: 16px;
 }
 
+header li:hover {
+  color: var(--gray-20);
+  font-weight: 700;
+}
+
+header a:hover {
+  color: var(--gray-20);
+  font-weight: 700;
+
+}
+
 h1 {
   color:var(--gray-30);
   font-size: 6rem;
