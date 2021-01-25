@@ -10,10 +10,26 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-title);
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+}
+
+header {
+  position: absolute;
+  top:0;
+  width: 188px;
+  left: -188px;
+  margin-top: 64px;
+  font-size: 1.4rem;
+  color: var(--gray-10);
+}
+
+.header {
+  position: sticky;
+  top: 0;
 }
 
 header summary {
@@ -26,6 +42,10 @@ header a, header p {
   color: var(--gray-10);
 }
 
+header li {
+  margin-bottom: 16px;
+}
+
 h1 {
   color:var(--gray-30);
   font-size: 6rem;
@@ -33,13 +53,14 @@ h1 {
   font-weight: normal;
 }
 
-h1+p {
+h1 + p {
   margin-bottom: 64px;
 }
 
-main {
-  border: 1px solid red;
+.header-content {
+  position: relative;
 }
+
 
 .wrapper {
   width: 902px;
@@ -47,7 +68,7 @@ main {
 }
 
 .content {
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 
@@ -92,7 +113,7 @@ p strong {
 }
 
 .setup h3, .conceptos-web h3 {
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   position: sticky;
   top: 0;
   background-color: white;
