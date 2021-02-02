@@ -1,29 +1,41 @@
 :root {
-  --font-title: 'Roboto', Arial, sans-serif;
-  --gray-30: #212121;
-  --gray-20: #424242;
-  --gray-10: #616161;
-  --background-footer:#212429;
+  --font-title: Nunito, Arial, sans-serif;
+  --gray-30: #FFF;
+  --gray-20: #A5A3A5;
+  --gray-10: #A5A3A5;
+  --background-footer:#FFF;
 
 }
 
 html {
   font-size: 62.5%;
   font-family: var(--font-title);
+  font-style: normal;
 }
 
 body {
   margin: 0;
+  background-color: #251F24;
+;
 }
 
-header summary {
-  font-weight: 700;
-}
 
 header a, header p {
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--gray-10);
+}
+
+header summary, header summary a, header p {
+  font-weight: 700;
+  color: var(--gray-30);
+}
+
+ol {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--gray-10);
+  line-height: 2.4rem;
 }
 
 h1 {
@@ -37,13 +49,14 @@ h2 {
 }
 
 h3 {
-  color:var(--gray-20);
+  color:var(--gray-30);
   font-size: 2.4rem;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.6rem;
-  color: var(--gray-30);
+  color: var(--gray-20);
 }
 
 p strong {
@@ -54,7 +67,7 @@ p strong {
 .setup h3::after, .conceptos-web h3::after {
   content: " ";
   display: block;
-  background-color: var(--gray-20);
+  background-color: var(--gray-30);
   width: 80px;
   height: 4px;
 
@@ -65,9 +78,13 @@ section article p {
   color: var(--gray-20);
 }
 
+hr {
+  border: 1px solid rgba(97, 97, 97, 0.2);
+}
+
 .hero {
   height: 350px;
-  background-image: url(../img/pattern.png);
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
 
 section article {
@@ -75,58 +92,79 @@ section article {
 }
 
 section .title-setup::before {
-  content: counter(titleList);
+  content: counter(titleList) ". ";
+}
+
+blockquote {
+  background-color: #3A3539;
+  border-radius: 8px;
+  padding: 24px;
 }
 
 blockquote p{
-  display: inline-block;
+  font-size: 2.4rem;
+  display: block;
+  margin:8px 0 8px 0;
+  color: #FFF;
 }
 
-blockquote::before {
-  display: inline-block;
-  content: " ";
-  height: 80px;
-  width: 4px;
-  background-color: var(--gray-30);
-}
 
 pre {
-  background-color: #FEC62E;
+  color: #FFF;
+  background-color: #3A3539;
   font-family: var(--font-title);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
   font-size: 1.6rem;
+  border-radius: 8px;
+  padding: 40px;
 }
 
 .dom img, .css img , .modelo-caja img {
   width: 100vw;
 }
 
+.modelo-caja ul li::marker{
+  color: #FFF;
+}
+
 .modelo-caja li {
   font-size: 1.6rem;
+  color: var(--gray-10);
+}
+
+.modelo-caja ul li {
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 .modelo-caja a {
-  color: var(--gray-20);
-  font-weight: 700;
-}
-
-.suscribe a {
-  color: var(--gray-20);
-  text-decoration: none;
+  font-weight: 400;
+  color: #0066ff;
 }
 
 .suscribe input {
-  width: 280px;
+  background-color: #251F24;
+  width: 100%;
+  margin-bottom: 20px;
   height: 48px;
-  border-radius: 90px;
-  border: 1px solid #616161;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
   font-size: 1.6rem;
   padding: 0 16px;
 }
 
-.button {
-  background-color: black;
+.suscribe input::placeholder {
+  color: #FFF;
+}
+
+.suscribe .button {
+  background-color: #157EFB;
+  border: none;
   color: white;
-  width: 119px;
+  width: 100%;
+  padding: 12px;
 }
 
 .footer {
@@ -135,7 +173,7 @@ pre {
   padding-bottom: 88px;
 }
 .footer p{
-  color: white;
+  color: #251F24;
   font-size: 3.2rem;
 }
 
